@@ -4,7 +4,7 @@ class CityConsole
 {
 	Cities c;
 public:
-	void start();
+	void start(string dir);
 	void game();
 };
 
