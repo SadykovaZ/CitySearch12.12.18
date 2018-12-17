@@ -1,19 +1,37 @@
 #include "CityConsole.h"
 
-void CityConsole::start()
+void CityConsole::start(string dir)
 {
 	try {
-		c.loadFromFileCountry("C:\\Users\\СадыковаЖ\\Desktop", "country.csv");
+		
+		c.loadFromFile(dir);
+	
 	}
 	catch (exception&e) {
 		cout << e.what();
-		cout << "\nНевозможно продолжить играть\n";
+		cout << "\nРќРµРІРѕР·РјРѕР¶РЅРѕ РїСЂРѕРґРѕР»Р¶РёС‚СЊ РёРіСЂР°С‚СЊ\n";
 		system("pause");
 		exit(0);
 	}
+
+	game();
 }
 
 void CityConsole::game()
 {
+	string name;
 
+	while (1) {
+		system("cls");
+		cout << "Р’РІРµРґРёС‚Рµ РЅР°Р·РІР°РЅРёРµ РіРѕСЂРѕРґР°: ";
+		cin >> name;
+		try {
+			c.find(name);
+		}
+		catch (exception&e) {
+			cout << e.what();
+
+		}
+		system("pause");
+	}
 }
