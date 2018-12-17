@@ -9,7 +9,7 @@ void main()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 	CityConsole c;
-	c.start();
+	c.start("C:\\Users\\РЎР°РґС‹РєРѕРІР°Р–\\Desktop");
 
 	system("pause");
 }
@@ -37,7 +37,7 @@ void main()
 //
 //	reinterpret_cast;
 //
-//	//const_cast; //снятие с константности ссылки или указателя
+//	//const_cast; //Г±Г­ГїГІГЁГҐ Г± ГЄГ®Г­Г±ГІГ Г­ГІГ­Г®Г±ГІГЁ Г±Г±Г»Г«ГЄГЁ ГЁГ«ГЁ ГіГЄГ Г§Г ГІГҐГ«Гї
 //
 //
 //
